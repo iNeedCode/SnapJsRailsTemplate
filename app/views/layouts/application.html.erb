@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">	
+  <title>SnapJsRailsTemplate</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="snap-drawers">
+            <div class="snap-drawer snap-drawer-left">
+                <div>
+                    <h3>Snap.js</h3>
+                    <div class="demo-social">
+                        social
+                    </div>
+                    <h4>Demos</h4>
+                    <ul>
+                        <li><a href="default.html">Default</a></li>
+                    </ul>
+                    <div>
+                        <p>The Default demo shows basic Snap.js functionality</p>
+                    </div>
+                </div>
+            </div>
+            <div class="snap-drawer snap-drawer-right"></div>
+        </div>
+        
+        <div id="content" class="snap-content">
+            <div id="toolbar">
+                <a href="#" id="open-left"></a>
+                <h1><%= @toolbar || "MyAwesomeApp" %></h1>
+								<%= yield %>
+						</div>
+        </div>
+</body>
+</html>
