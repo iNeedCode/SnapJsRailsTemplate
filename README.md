@@ -1,3 +1,4 @@
+##Snap.js template integrated in Rails 4.0
 This Rails 4.0 template provides you with the [Snap.js][1] library, so that you can start developing your next beautiful HTML5 mobile App right away.
 
 #### Clean the template
